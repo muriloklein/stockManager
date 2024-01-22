@@ -1,4 +1,3 @@
-import Button from "../../Components/Buttons";
 import ListHeaders from "../../Components/ListHeaders";
 import ListItens from "../../Components/ListItens";
 import { Link } from "react-router-dom";
@@ -29,17 +28,17 @@ export default function AllItens() {
                 <p>{item.category}</p>
                 <p>
                   <Link to={`/Itens/${item.id}`}>
-                    <Button className="blueButton">Ver</Button>
+                    <button className="blueButton">Ver</button>
                   </Link>
                   <Link to={`/Itens/update/${item.id}`}>
-                    <Button className="whiteButton">Atualizar</Button>
+                    <button className="whiteButton">Atualizar</button>
                   </Link>
-                  <Button
+                  <button
                     className="redButton"
                     onClick={() => removeProduct(item.id)}
                   >
                     Excluir
-                  </Button>
+                  </button>
                 </p>
               </ListItens>
             </li>

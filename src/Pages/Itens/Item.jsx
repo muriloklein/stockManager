@@ -1,6 +1,5 @@
 import { Link, useParams } from "react-router-dom";
 import useGameCollection from "../../Hooks/UseProductCollection";
-import Button from "../../Components/Buttons";
 
 export default function Product() {
   const { products, removeProduct } = useGameCollection();
@@ -21,14 +20,14 @@ export default function Product() {
         <h2>{product.name}</h2>
         <div>
           <Link to={`/Itens/update/${product.id}`}>
-            <Button className="blueButton">Atualizar</Button>
+            <button className="blueButton">Atualizar</button>
           </Link>
-          <Button
+          <button
             className="redButton"
             onClick={() => removeProduct(product.id)}
           >
             Excluir
-          </Button>
+          </button>
         </div>
       </div>
       <div className="individualItemSectionDiv">

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Button from "../../Components/Buttons";
 import useProductCollection from "../../Hooks/UseProductCollection";
 
 export default function NewItem() {
@@ -105,9 +104,9 @@ export default function NewItem() {
             onChange={(desc) => setPDescription(desc.target.value)}
             required
           ></textarea>
-          <Button className="blueButton pdButton" type="submit">
+          <button className="blueButton pdButton" type="submit">
             Salvar
-          </Button>
+          </button>
         </div>
       </form>
     </section>

@@ -1,4 +1,3 @@
-import Button from "../../Components/Buttons";
 import { useParams } from "react-router-dom";
 import useProductCollection from "../../Hooks/UseProductCollection";
 import { useState } from "react";
@@ -107,9 +106,9 @@ export default function UpdateItem() {
             onChange={(descr) => setPDescription(descr.target.value)}
             required
           ></textarea>
-          <Button className="blueButton pdButton" type="submit">
+          <button className="blueButton pdButton" type="submit">
             Salvar
-          </Button>
+          </button>
         </div>
       </form>
     </section>

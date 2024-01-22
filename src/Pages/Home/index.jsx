@@ -1,7 +1,6 @@
 import Displays from "../../Components/Displays";
 import ListHeaders from "../../Components/ListHeaders";
 import ListItens from "../../Components/ListItens";
-import Button from "../../Components/Buttons";
 import useProductCollection from "../../Hooks/UseProductCollection";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -81,7 +80,7 @@ export default function Home() {
                       <p>{product.name}</p>
                       <p>
                         <Link to={`/Itens/${product.id}`}>
-                          <Button className="whiteButton">Ver</Button>
+                          <button className="whiteButton">Ver</button>
                         </Link>
                       </p>
                     </ListItens>
@@ -115,7 +114,7 @@ export default function Home() {
                       <p>{product.inStock} Produtos</p>
                       <p>
                         <Link to={`Itens/${product.id}`}>
-                          <Button className="whiteButton">Ver</Button>
+                          <button className="whiteButton">Ver</button>
                         </Link>
                       </p>
                     </ListItens>
