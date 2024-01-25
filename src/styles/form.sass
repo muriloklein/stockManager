@@ -10,28 +10,48 @@
     gap: 1rem
     width: 100%
     margin-top: 1rem
+    flex-wrap: wrap
+
+.formFirstSection
+  max-width: 63.063rem
 
 .formItem 
   display: flex
   flex-direction: column
   align-items: start
   justify-content: center
+  min-width: 10rem
+  max-width: 15rem
 
 .formLabel 
   margin-bottom: -10px
+
+.formLabelTextArea
+  margin-bottom: -27px
 
 input,
 select 
   background-color: #0000006f
   padding: 0.7rem
   border: none
-  width: 15rem
+  width: 100%
+
+.formSecondSection
+  overflow-x: scroll
+
+.formItemTextArea
+  display: flex
+  flex-direction: column
+  align-items: start
+  justify-content: center
+  max-width: 63.063rem
+  padding-top: 1rem
 
 textarea 
   background-color: #0000006f
   width: 100%
+  min-width: 25rem
   border: none
-  padding: 1rem
 
 .pdButton 
   padding: 0.5rem 1rem

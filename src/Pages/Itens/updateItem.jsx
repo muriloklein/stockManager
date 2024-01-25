@@ -35,7 +35,7 @@ export default function UpdateItem() {
   return (
     <section>
       <form className="newItemForm" onSubmit={handleSubmit}>
-        <div>
+        <div className="formFirstSection">
           <div className="formItem">
             <label htmlFor="" className="formLabel">
               Nome
@@ -93,19 +93,21 @@ export default function UpdateItem() {
             </select>
           </div>
         </div>
-        <div className="formItem">
-          <label htmlFor="" className="formLabel">
+        <div className="formItemTextArea">
+          <label htmlFor="" className="formLabelTextArea">
             Descrição
           </label>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            value={pDescription}
-            onChange={(descr) => setPDescription(descr.target.value)}
-            required
-          ></textarea>
+          <div className="formSecondSection">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              value={pDescription}
+              onChange={(descr) => setPDescription(descr.target.value)}
+              required
+            ></textarea>
+          </div>
           <button className="blueButton pdButton" type="submit">
             Salvar
           </button>
